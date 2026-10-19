@@ -2,7 +2,11 @@
 
 Impressum, Datenschutzerklärung und Support-Kontakt zur App CarSweep (iOS und Android).
 
-https://carsweep-app.github.io/CarSweep-App/
+https://carsweep.app/
+
+Die Domain liegt bei Cloudflare (Registrar und DNS): CNAME `@` und `www` →
+`carsweep-app.github.io`, beide „DNS only“ – mit Proxy stellt GitHub kein Zertifikat aus.
+Die alte Adresse https://carsweep-app.github.io/CarSweep-App/ leitet hierher weiter.
 
 ## Indexierung
 
