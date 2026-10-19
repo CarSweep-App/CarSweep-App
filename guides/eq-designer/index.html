@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<title>EQ Designer guide – CarSweep</title>
+<meta name="description" content="How to measure what each slider of your head unit's equalizer really does with CarSweep's EQ Designer, so EZ Tuning gives you values for exactly your sliders.">
+<link rel="stylesheet" href="../guide.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/">CarSweep</a>
+    <nav><a href="/guides/">Guides</a><a href="/guides/expert-mode/">Expert mode</a><a href="mailto:help@carsweep.app">Support</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<p class="crumbs"><a href="/guides/">Guides</a> › EQ Designer</p>
+<h1>EQ Designer: teach CarSweep your head unit's EQ <span class="pro">PRO</span></h1>
+<p class="lead">Every head unit labels its equalizer differently: five sliders without frequencies, a “+7”
+that isn't 7 dB, a separate subwoofer slider. The EQ Designer measures what each slider really does –
+filter type, frequency, width and how many dB one step is. After that, EZ Tuning and the analysis give
+you values for exactly your sliders, in your head unit's own steps.</p>
+
+<div class="box">
+  <h3>What you need</h3>
+  <ul>
+    <li>CarSweep Pro. The EQ Designer is on the iPhone for now.</li>
+    <li>Your phone connected to the car via <b>Bluetooth audio</b>, not CarPlay.</li>
+    <li>A place where the phone can lie still: a phone holder or the driver's seat. The phone's own
+      microphone is fine.</li>
+    <li>About ten minutes in the parked car, engine off, doors closed.</li>
+  </ul>
+  <p class="tip"><strong>How it works:</strong> CarSweep measures once with all sliders at 0 – the
+  reference – and then every slider at its maximum and at its minimum. The difference to the reference
+  is that slider's filter. Because only differences count, the car, the speakers and the microphone
+  cancel out: the phone doesn't need to be at your head, it just must not move.</p>
+</div>
+
+<div class="box warn">
+  <strong>Volume:</strong> start at a moderate volume and keep it the same for the whole run. A slider at
+  its maximum can boost its range by around 8 – 10 dB – listen that nothing distorts or rattles.
+</div>
+
+<nav class="box toc" aria-label="Steps">
+  <h3>Steps</h3>
+  <ol>
+    <li><a href="#open">Open the EQ Designer</a></li>
+    <li><a href="#hub">Start a new measurement</a></li>
+    <li><a href="#setup">Describe your EQ</a></li>
+    <li><a href="#prep">Prepare and measure the reference</a></li>
+    <li><a href="#slider">Measure each slider</a></li>
+    <li><a href="#review">Check each result</a></li>
+    <li><a href="#uncertain">When a slider is uncertain</a></li>
+    <li><a href="#result">Save your head unit</a></li>
+    <li><a href="#use">Use it with EZ Tuning</a></li>
+    <li><a href="#faq">Questions</a></li>
+  </ol>
+</nav>
+
+<section class="step" id="open">
+  <figure class="shot">
+    <img src="../img/expert/01-home.jpg" width="630" height="1048" alt="CarSweep start screen with the EQ Designer tile">
+    <span class="pin" style="--x:46.7;--y:55.2" aria-hidden="true">1</span>
+  </figure>
+  <div>
+    <p class="num">Step 1</p>
+    <h2>Open the EQ Designer</h2>
+    <ol class="legend">
+      <li><span class="n">1</span><div><b>EQ Designer</b> – on the start screen, in Car mode.</div></li>
+    </ol>
+    <p class="tip">You can also get here from EZ Tuning: if your car isn't in the list, tap
+    <b>Car not listed? Add it now</b>.</p>
+  </div>
+</section>
+
+<section class="step" id="hub">
+  <figure class="shot">
+    <img src="../img/eq-designer/01-hub.jpg" width="630" height="708" alt="EQ Designer overview with the Measure head unit EQ button, a measured head unit and Enter a band grid by hand">
+    <span class="pin" style="--x:92.5;--y:27" aria-hidden="true">1</span>
+    <span class="pin" style="--x:92;--y:53.1" aria-hidden="true">2</span>
+    <span class="pin" style="--x:92.5;--y:83.6" aria-hidden="true">3</span>
+  </figure>
+  <div>
+    <p class="num">Step 2</p>
+    <h2>Start a new measurement</h2>
+    <ol class="legend">
+      <li><span class="n">1</span><div><b>Measure head unit EQ</b> – starts the guided measurement.</div></li>
+      <li><span class="n">2</span><div><b>Measured head units</b> – everything you've measured so far, with the filter of every slider. Tap one to use it.</div></li>
+      <li><span class="n">3</span><div><b>Enter a band grid by hand</b> – if you already know your EQ's frequencies (a DSP, or a head unit with labelled bands), you can type them in instead of measuring.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="step" id="setup">
+  <figure class="shot">
+    <img src="../img/eq-designer/02-setup.jpg" width="630" height="787" alt="What does your EQ look like: slider preview, number of band sliders, subwoofer slider, top of the slider and steps">
+    <span class="pin" style="--x:92.5;--y:13.3" aria-hidden="true">1</span>
+    <span class="pin" style="--x:65.2;--y:36.3" aria-hidden="true">2</span>
+    <span class="pin" style="--x:72.6;--y:49" aria-hidden="true">3</span>
+    <span class="pin" style="--x:96.5;--y:64.1" aria-hidden="true">4</span>
+    <span class="pin" style="--x:95.8;--y:78.1" aria-hidden="true">5</span>
+    <span class="pin" style="--x:92.5;--y:88.6" aria-hidden="true">6</span>
+  </figure>
+  <div>
+    <p class="num">Step 3</p>
+    <h2>Describe your EQ</h2>
+    <p>Look at the equalizer screen in your car and copy what you see.</p>
+    <ol class="legend">
+      <li><span class="n">1</span><div><b>Preview</b> – the slider bank as CarSweep will measure it. It should look like your car's screen.</div></li>
+      <li><span class="n">2</span><div><b>Band sliders</b> – how many EQ sliders there are, without balance, fader and subwoofer.</div></li>
+      <li><span class="n">3</span><div><b>Subwoofer slider</b> – switch it on if there's a separate subwoofer level. It is always measured first.</div></li>
+      <li><span class="n">4</span><div><b>Top of the slider shows</b> – the number at the top end of a slider, e.g. 7 for −7 … +7. It doesn't have to be dB; CarSweep measures what one step really does.</div></li>
+      <li><span class="n">5</span><div><b>Steps</b> – how far one click moves the slider: 1 or 0.5.</div></li>
+      <li><span class="n">6</span><div><b>Continue</b>.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="step" id="prep">
+  <figure class="shot">
+    <img src="../img/eq-designer/03-prep.jpg" width="630" height="834" alt="Before you start: drawing of the phone in a holder, checklist and the button Measure with all sliders at 0">
+    <span class="pin" style="--x:85.8;--y:13.5" aria-hidden="true">1</span>
+    <span class="pin" style="--x:0;--y:43.2" aria-hidden="true">2</span>
+    <span class="pin" style="--x:0;--y:56.2" aria-hidden="true">3</span>
+    <span class="pin" style="--x:0;--y:64.3" aria-hidden="true">4</span>
+    <span class="pin" style="--x:0;--y:74.8" aria-hidden="true">5</span>
+    <span class="pin" style="--x:92.5;--y:83.1" aria-hidden="true">6</span>
+  </figure>
+  <div>
+    <p class="num">Step 4</p>
+    <h2>Prepare and measure the reference</h2>
+    <ol class="legend">
+      <li><span class="n">1</span><div><b>Phone position</b> – in a holder or on the driver's seat, microphone facing forward.</div></li>
+      <li><span class="n">2</span><div><b>Put the phone down and leave it there</b> – every measurement is compared with the first one. If the phone moves, the comparison breaks.</div></li>
+      <li><span class="n">3</span><div><b>All EQ sliders to 0</b>, loudness and surround off – and speed-dependent volume, if your car has it.</div></li>
+      <li><span class="n">4</span><div><b>Balance fully to the driver's side</b> – optional. Fewer speakers mean fewer cancellations and a cleaner result. Set it back afterwards.</div></li>
+      <li><span class="n">5</span><div><b>Engine and fan off, windows closed.</b></div></li>
+      <li><span class="n">6</span><div><b>Measure with all sliders at 0</b> – the reference. CarSweep plays two sweeps; if they differ too much (door closed, someone moved), it asks you to measure the reference again.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="step" id="slider">
+  <figure class="shot">
+    <img src="../img/eq-designer/04-slider.jpg" width="630" height="539" alt="Progress bar of the sliders and the instruction Set slider 2 to +7 with the Measure button">
+    <span class="pin" style="--x:94.5;--y:6.4" aria-hidden="true">1</span>
+    <span class="pin" style="--x:94.5;--y:42.7" aria-hidden="true">2</span>
+    <span class="pin" style="--x:94.5;--y:82.6" aria-hidden="true">3</span>
+  </figure>
+  <div>
+    <p class="num">Step 5</p>
+    <h2>Measure each slider</h2>
+    <p>Now one slider after the other, each twice: all the way up, then all the way down.</p>
+    <ol class="legend">
+      <li><span class="n">1</span><div><b>Progress</b> – green is done, blue is the current slider, orange means uncertain. SUB is the subwoofer slider, the numbers are your band sliders counted from the left.</div></li>
+      <li><span class="n">2</span><div><b>What to do</b> – e.g. “Set slider 2 to +7”: move only this slider all the way up. All other sliders stay at 0. Next time it says “−7”: all the way down.</div></li>
+      <li><span class="n">3</span><div><b>Measure</b> – two sweeps for this position. Don't touch the phone.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="step" id="review">
+  <figure class="shot">
+    <img src="../img/eq-designer/05-review.jpg" width="630" height="896" alt="Result of one slider: Bell 950 Hz Q 1.2 with the measured change, steps in dB, Clearly identified, Slider 3 back to 0 and Next slider">
+    <span class="pin" style="--x:94.5;--y:3.8" aria-hidden="true">1</span>
+    <span class="pin" style="--x:49.8;--y:28.5" aria-hidden="true">2</span>
+    <span class="pin" style="--x:52.2;--y:57.9" aria-hidden="true">3</span>
+    <span class="pin" style="--x:47.3;--y:64.2" aria-hidden="true">4</span>
+    <span class="pin" style="--x:52.2;--y:75.5" aria-hidden="true">5</span>
+    <span class="pin" style="--x:94.5;--y:84.3" aria-hidden="true">6</span>
+    <span class="pin" style="--x:74.6;--y:96.3" aria-hidden="true">7</span>
+  </figure>
+  <div>
+    <p class="num">Step 6</p>
+    <h2>Check each result</h2>
+    <p>After both positions CarSweep shows what it found for this slider.</p>
+    <ol class="legend">
+      <li><span class="n">1</span><div><b>Progress</b> – the slider turns green.</div></li>
+      <li><span class="n">2</span><div><b>Filter</b> – the type (<i>Bell</i> for a peak in the middle, <i>Low shelf</i> for bass, <i>High shelf</i> for treble), its frequency and its width (Q). The plot shows the measured change at maximum and minimum (dots) and the filter that fits it (line).</div></li>
+      <li><span class="n">3</span><div><b>Steps in dB</b> – what the end positions really do, e.g. “+7 on the radio = +8.1 dB”.</div></li>
+      <li><span class="n">4</span><div><b>Clearly identified</b> – the filter matches the measurement well.</div></li>
+      <li><span class="n">5</span><div><b>Back to 0</b> – set this slider back to 0 before you continue.</div></li>
+      <li><span class="n">6</span><div><b>Next slider</b> – after the last slider this button reads <b>Show result</b>.</div></li>
+      <li><span class="n">7</span><div><b>Measure this slider again</b> – if something went wrong during the sweeps.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="step" id="uncertain">
+  <figure class="shot">
+    <img src="../img/eq-designer/06-uncertain.jpg" width="630" height="947" alt="A slider marked orange with the note Uncertain – measure again and the reason that the two sweeps differed">
+    <span class="pin" style="--x:20.4;--y:7.9" aria-hidden="true">1</span>
+    <span class="pin" style="--x:63.4;--y:60.6" aria-hidden="true">2</span>
+    <span class="pin" style="--x:74.6;--y:97.4" aria-hidden="true">3</span>
+  </figure>
+  <div>
+    <p class="num">Step 7</p>
+    <h2>When a slider is uncertain</h2>
+    <ol class="legend">
+      <li><span class="n">1</span><div><b>Orange</b> – this slider wasn't measured cleanly.</div></li>
+      <li><span class="n">2</span><div><b>Uncertain – measure again?</b> – with the reason underneath. Most often the two sweeps differed: the phone moved, a door closed, the fan came on.</div></li>
+      <li><span class="n">3</span><div><b>Measure this slider again</b> – repeats only this slider. You can also continue and remeasure it later from the result.</div></li>
+    </ol>
+    <p class="tip"><strong>“No measurable effect”</strong> means the slider changes nothing the microphone can hear – typically a very high band. It stays in the bank without a value, so the layout still matches your car.</p>
+  </div>
+</section>
+
+<section class="step" id="result">
+  <figure class="shot">
+    <img src="../img/eq-designer/07-result.jpg" width="630" height="978" alt="Your head unit's EQ: all filters in one plot, the list of filters, the name field and Save and use">
+    <span class="pin" style="--x:94.5;--y:10.7" aria-hidden="true">1</span>
+    <span class="pin" style="--x:53.5;--y:35.3" aria-hidden="true">2</span>
+    <span class="pin" style="--x:92;--y:68.1" aria-hidden="true">3</span>
+    <span class="pin" style="--x:0;--y:74.8" aria-hidden="true">4</span>
+    <span class="pin" style="--x:92.5;--y:90.5" aria-hidden="true">5</span>
+  </figure>
+  <div>
+    <p class="num">Step 8</p>
+    <h2>Save your head unit</h2>
+    <ol class="legend">
+      <li><span class="n">1</span><div><b>All sliders at a glance</b> – every filter in one plot, one colour per slider.</div></li>
+      <li><span class="n">2</span><div><b>The list</b> – type, frequency and Q of every slider. Sliders marked orange were uncertain: tap one to measure only that slider again.</div></li>
+      <li><span class="n">3</span><div><b>Name</b> – e.g. the car, so you find it again.</div></li>
+      <li><span class="n">4</span><div><b>Reminder</b> – set the balance back to the centre and loudness back on, if you use it.</div></li>
+      <li><span class="n">5</span><div><b>Save and use</b> – stores the head unit and selects it for your car.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="step" id="use">
+  <figure class="shot">
+    <img src="../img/eq-designer/08-ez-pick.jpg" width="630" height="1128" alt="EZ Tuning first step Which stereo do you have, with the rows Your head unit or band grid and Car not listed? Add it now">
+    <span class="pin" style="--x:82.1;--y:76.9" aria-hidden="true">1</span>
+    <span class="pin" style="--x:82.1;--y:85.3" aria-hidden="true">2</span>
+  </figure>
+  <div>
+    <p class="num">Step 9</p>
+    <h2>Use it with EZ Tuning</h2>
+    <p>Now measure your car as usual: <b>EZ Tuning</b> on the start screen → choose your stereo → set the
+    level → one sweep. The result shows a value for every slider you measured, in your head unit's own
+    steps.</p>
+    <ol class="legend">
+      <li><span class="n">1</span><div><b>Your head unit or band grid</b> – your measured head unit is here (and already selected after saving). Tap to switch between several.</div></li>
+      <li><span class="n">2</span><div><b>Car not listed? Add it now</b> – starts the EQ Designer from here.</div></li>
+    </ol>
+    <p class="tip">In <a href="/guides/expert-mode/">Expert mode</a> the values for your sliders appear in the card <b>Your car's EQ</b> below the graph.</p>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <h2>Questions</h2>
+  <dl class="faq">
+    <dt>Do I have to hold the phone in front of my face like in EZ Tuning?</dt>
+    <dd>No. The EQ Designer compares measurements with each other, so the position doesn't matter – as long as the phone stays exactly where it is for the whole run.</dd>
+    <dt>My head unit shows +7, but CarSweep says +8.1 dB. Which is right?</dt>
+    <dd>Both. +7 is what the screen shows, +8.1 dB is what the slider really does. CarSweep remembers this and gives you recommendations in your head unit's own steps.</dd>
+    <dt>Do I need to do this again?</dt>
+    <dd>Once per car is enough. Repeat single sliders only if they came out orange.</dd>
+    <dt>My car is already in the list (Tesla, VW/Audi). Do I need the EQ Designer?</dt>
+    <dd>No – pick your car and start EZ Tuning. The EQ Designer is for every head unit CarSweep doesn't know yet.</dd>
+    <dt>Can I measure single speakers with it?</dt>
+    <dd>No. It measures what the equalizer does to the whole system. The optional balance setting only reduces cancellations during the measurement.</dd>
+  </dl>
+  <p>Questions or a head unit that doesn't work? Write to <a href="mailto:help@carsweep.app">help@carsweep.app</a> – a screenshot of the result helps.</p>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Screenshots from the iPhone app. Also read: <a href="/guides/expert-mode/">Expert mode</a>.</p>
+    <p><a href="/">Imprint, privacy &amp; support</a> · <a href="mailto:help@carsweep.app">help@carsweep.app</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

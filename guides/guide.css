@@ -1,0 +1,126 @@
+/* CarSweep guides – shared styles. System fonts only, no third-party requests. */
+
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --text: #1d1d1f;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --card: #f5f5f7;
+  --accent: #0a84ff;
+  --pin: #ffd60a;
+  --pin-text: #111111;
+  --pro: #ff9f0a;
+  --warn-bg: #fff7e6;
+  --warn-line: #f5c26b;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0b0c;
+    --text: #f2f2f4;
+    --muted: #9ca3af;
+    --line: #2c2c2e;
+    --card: #1c1c1e;
+    --warn-bg: #2a2110;
+    --warn-line: #7a5a1c;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: 60rem; margin: 0 auto; padding: 0 1rem; }
+
+/* Header and footer */
+.top { border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 3.25rem; }
+.brand { font-weight: 700; color: var(--text); }
+.top nav { display: flex; gap: 1.1rem; font-size: .95rem; }
+.foot { border-top: 1px solid var(--line); margin-top: 4rem; padding: 1.5rem 0 3rem; color: var(--muted); font-size: .9rem; }
+.foot p { margin: .3rem 0; }
+
+/* Intro */
+.crumbs { color: var(--muted); font-size: .9rem; margin: 2rem 0 .5rem; }
+h1 { font-size: clamp(1.8rem, 4.5vw, 2.5rem); line-height: 1.15; margin: 0 0 .75rem; letter-spacing: -.01em; }
+.lead { font-size: 1.12rem; color: var(--text); margin: 0 0 1.5rem; max-width: 46rem; }
+h2 { font-size: 1.45rem; line-height: 1.25; margin: 0 0 .6rem; }
+h3 { font-size: 1.1rem; margin: 1.5rem 0 .4rem; }
+
+.box { background: var(--card); border-radius: 14px; padding: 1rem 1.25rem; margin: 1.25rem 0; }
+.box h3 { margin-top: 0; }
+.box ul { margin: .25rem 0 0; padding-left: 1.2rem; }
+.box li { margin: .25rem 0; }
+.warn { background: var(--warn-bg); border: 1px solid var(--warn-line); }
+
+.toc ol { margin: .25rem 0 0; padding-left: 1.4rem; columns: 2 16rem; column-gap: 2rem; }
+.toc li { margin: .2rem 0; break-inside: avoid; }
+
+.pro {
+  display: inline-block; vertical-align: .12em; margin-left: .3rem;
+  font-size: .68rem; font-weight: 700; letter-spacing: .04em;
+  color: #fff; background: var(--pro); border-radius: 5px; padding: .05rem .35rem;
+}
+
+/* One step: screenshot left, explanation right; stacked on narrow screens */
+.step {
+  display: grid; grid-template-columns: 315px 1fr; gap: 2.25rem; align-items: start;
+  padding: 2.5rem 0; border-top: 1px solid var(--line);
+}
+.step:first-of-type { border-top: 0; }
+.step .num { color: var(--muted); font-size: .95rem; font-weight: 600; margin: 0 0 .2rem; }
+@media (max-width: 760px) {
+  .step { grid-template-columns: 1fr; gap: 1.25rem; }
+  .step .shot { justify-self: center; }
+}
+
+/* Screenshot with numbered pins. The pins may hang over the edge, so the figure does not clip. */
+.shot { position: relative; width: 100%; max-width: 315px; margin: 0; }
+.shot img {
+  display: block; width: 100%; height: auto; border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: 0 1px 2px rgba(0,0,0,.12), 0 8px 28px rgba(0,0,0,.18);
+}
+.pin {
+  position: absolute; left: calc(var(--x) * 1%); top: calc(var(--y) * 1%);
+  transform: translate(-50%, -50%);
+  width: 26px; height: 26px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--pin); color: var(--pin-text);
+  font: 700 14px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  border: 2px solid #111; box-shadow: 0 1px 4px rgba(0,0,0,.45);
+}
+
+/* Legend matching the pins */
+.legend { list-style: none; margin: .75rem 0 0; padding: 0; }
+.legend li { display: grid; grid-template-columns: 26px 1fr; gap: .75rem; margin: 0 0 .8rem; }
+.legend .n {
+  width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--pin); color: var(--pin-text); font-weight: 700; font-size: 14px;
+  border: 2px solid #111; margin-top: .1rem;
+}
+.legend b { font-weight: 650; }
+
+.tip { color: var(--muted); font-size: .95rem; margin: .75rem 0 0; }
+.tip strong { color: var(--text); }
+
+/* Plain sections (FAQ etc.) */
+.section { padding: 2.5rem 0 0; border-top: 1px solid var(--line); margin-top: 1rem; }
+dl.faq dt { font-weight: 650; margin-top: 1.1rem; }
+dl.faq dd { margin: .25rem 0 0; color: var(--text); }
+
+/* Guide overview */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.card { display: block; background: var(--card); border-radius: 16px; padding: 1.25rem 1.25rem 1.1rem; color: var(--text); }
+.card:hover { text-decoration: none; outline: 2px solid var(--accent); }
+.card h2 { font-size: 1.2rem; margin-bottom: .35rem; }
+.card p { margin: 0; color: var(--muted); font-size: .97rem; }
+.card .go { display: inline-block; margin-top: .75rem; color: var(--accent); font-weight: 600; }
