@@ -1,4 +1,5 @@
-/* CarSweep guides – shared styles. System fonts only, no third-party requests. */
+/* CarSweep website – one stylesheet for every page (guides, imprint, privacy, support).
+   System fonts only, no third-party requests. */
 
 :root {
   color-scheme: light dark;
@@ -42,9 +43,15 @@ a:hover { text-decoration: underline; }
 
 /* Header and footer */
 .top { border-bottom: 1px solid var(--line); }
-.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 3.25rem; }
+.top .wrap {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: .25rem 1rem; min-height: 3.25rem; padding-top: .5rem; padding-bottom: .5rem;
+}
 .brand { font-weight: 700; color: var(--text); }
-.top nav { display: flex; gap: 1.1rem; font-size: .95rem; }
+.top nav { display: flex; flex-wrap: wrap; gap: .25rem 1.1rem; font-size: .95rem; }
+.top nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
+/* The two single guides are one tap away via "Guides"; on phones the bar keeps three items. */
+@media (max-width: 600px) { .top nav .wide { display: none; } }
 .foot { border-top: 1px solid var(--line); margin-top: 4rem; padding: 1.5rem 0 3rem; color: var(--muted); font-size: .9rem; }
 .foot p { margin: .3rem 0; }
 
@@ -124,3 +131,12 @@ dl.faq dd { margin: .25rem 0 0; color: var(--text); }
 .card h2 { font-size: 1.2rem; margin-bottom: .35rem; }
 .card p { margin: 0; color: var(--muted); font-size: .97rem; }
 .card .go { display: inline-block; margin-top: .75rem; color: var(--accent); font-weight: 600; }
+
+/* Text pages (imprint, privacy, support): narrower measure, sections with a rule between them */
+.prose > * { max-width: 46rem; }
+.prose h1 { margin-top: 2rem; }
+.prose h2 { margin-top: 0; }
+.prose .section:first-of-type { border-top: 0; padding-top: 1rem; }
+.prose address { font-style: normal; margin: .5rem 0 1rem; }
+.prose .box p { margin: .35rem 0 0; }
+.muted { color: var(--muted); }

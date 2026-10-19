@@ -17,8 +17,16 @@ im Repository selbst.
 ## Anleitungen (`guides/`)
 
 Englische Schritt-für-Schritt-Anleitungen mit Screenshots, verlinkt von der Startseite:
-`/guides/` (Übersicht), `/guides/expert-mode/`, `/guides/eq-designer/`. Gemeinsames Aussehen in
-`guides/guide.css` (nur Systemschriften, keine Anfragen an Dritte), Bilder in `guides/img/`.
+`/guides/` (Übersicht), `/guides/expert-mode/`, `/guides/eq-designer/`. Bilder in `guides/img/`.
+
+## Aussehen: ein Stylesheet, eine Kopfleiste
+
+Alle Seiten – Startseite (Impressum, Datenschutz, Support) und Anleitungen – nutzen `site.css`
+(nur Systemschriften, keine Anfragen an Dritte) und **dieselbe Kopf- und Fußleiste**:
+CarSweep · Guides · Expert mode · EQ Designer · Support · Imprint, die aktuelle Seite mit
+`aria-current="page"`. Auf dem Handy entfallen die beiden einzelnen Anleitungen (Klasse `wide`),
+sie sind über „Guides" einen Tipp entfernt. Kommt eine Seite dazu oder ändert sich ein Eintrag:
+in allen Seiten gleich ändern. Das Impressum muss von jeder Seite aus erreichbar bleiben.
 
 **Markierungen:** Jede Zahl auf einem Screenshot ist ein `<span class="pin" style="--x:…;--y:…">`
 – Position in Prozent der Bildbreite bzw. -höhe, der Mittelpunkt des Kreises. Die Liste daneben
