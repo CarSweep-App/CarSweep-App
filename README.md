@@ -1,6 +1,6 @@
 # CarSweep
 
-Impressum, Datenschutzerklärung und Support-Kontakt zur iOS-App CarSweep.
+Impressum, Datenschutzerklärung und Support-Kontakt zur App CarSweep (iOS und Android).
 
 https://carsweep-app.github.io/CarSweep-App/
 
